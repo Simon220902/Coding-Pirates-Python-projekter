@@ -43,8 +43,8 @@ def drawPieces(board):
 			#ellers er brikken False som er bolle 
 			else:
 				#tegn en crikel (bolle) da man skal tegne en cirkel fra dens midte bliver vi nødt til at finde midten af det felt den er i hendholdsvis for x-koordinatet og y-koordinatet
-				pygame.draw.circle(SCREEN, WHITE, [int(xboard[col]+((xboard[col+1]-xboard[col])/2)), int(yboard[row]+((yboard[row+1]-yboard[row])/2))], 50)
-				pygame.draw.circle(SCREEN, BLACK, [int(xboard[col]+((xboard[col+1]-xboard[col])/2)), int(yboard[row]+((yboard[row+1]-yboard[row])/2))], 35)
+				pygame.draw.circle(SCREEN, WHITE, [int(xboard[col]+((xboard[col+1]-xboard[col])/2)), int(yboard[row]+((yboard[row+1]-yboard[row])/2))], 50, 15)
+				#pygame.draw.circle(SCREEN, BLACK, [int(xboard[col]+((xboard[col+1]-xboard[col])/2)), int(yboard[row]+((yboard[row+1]-yboard[row])/2))], 35)
 				#pygame.draw.rect(SCREEN, BLUE, [xboard[col], yboard[row], xboard[1], yboard[1]]) #dette tegner en blå firkand 
 
 def draw(board):
@@ -137,7 +137,8 @@ if __name__ == '__main__':
 		BOARD = [[None, None, None],
 		 		 [None, None, None],
 		 		 [None, None, None]]
-		dt = 1/FPS
+		#dt = 1/FPS
+
 		while checkBoard(BOARD) == None: #Loop indtil enten kryds eller bolle har vundet eller det står uafgjort
 			for event in pygame.event.get():
 				if event.type == QUIT:
@@ -148,6 +149,7 @@ if __name__ == '__main__':
 					if validIn[0]:
 						BOARD[validIn[1]][validIn[2]] = TURN
 						TURN = not TURN
+
 			draw(BOARD)
-			dt = FPSClock.tick(FPS)
+			#dt = FPSClock.tick(FPS)
 		winScreen(checkBoard(BOARD))

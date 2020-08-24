@@ -2,6 +2,7 @@ import pygame
 import math
 #Tryk på mellemrum for at stoppe eller køre
 #Placér ved klik
+#Den virker ikke helt rigtigt, men ja.
 """
 Game of life's regler
 Any live cell with fewer than two live neighbours dies, as if by underpopulation.

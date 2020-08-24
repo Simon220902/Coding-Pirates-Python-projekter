@@ -6,11 +6,12 @@ bredde = 600
 
 skærm = pygame.display.set_mode((bredde, højde))
 
-dvdBillede = pygame.image.load("dvd.png")
+dvdBillede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/Visualiseringer/dvd.png")
+dvdBillede = pygame.transform.scale(dvdBillede, (100, 100))
 dvdX = random.randint(0, bredde)
 dvdY = random.randint(0, højde)
-dvdB = 32
-dvdH = 32
+dvdB = 100
+dvdH = 100
 dvdSX = 5
 dvdSY = 5
 dvdFarve = (0,0,0)
@@ -41,7 +42,7 @@ while kør:
 	if (dvdY + dvdH >= højde or dvdY <= 0):
 		dvdSY = - dvdSY
 		skiftFarve()
-
+	
 	for event in pygame.event.get():
 		if event.type == pygame.QUIT:
 			kør = False

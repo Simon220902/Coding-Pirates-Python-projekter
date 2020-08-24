@@ -13,12 +13,12 @@ skærm = pygame.display.set_mode((bredde, højde))
 spil = {'kør':True}
 
 #Jord billedet og jord variablen der indeholder værdierne knyttet til jorden
-jord_billede = pygame.image.load("ground.png")
+jord_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/ground.png")
 jord = {'x1':0, 'x2':1203 - 0, 'y':højde-19, 'bredde':1203}
 
 #Dino billedet og dino variablen der indeholder værdierne knyttet til jorden
-dino_billede = pygame.image.load("dinoer.png")
-dino = {'x':120, 'y':højde - 95 - 10, 'bredde':440//5, 'højde':95, 'billed_nr':2, 'hopper':False, 'v':8, 'm':2, 'y_min': højde - 95 - 10, 'hop lyd':pygame.mixer.Sound("hop.wav")}
+dino_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/dinoer.png")
+dino = {'x':120, 'y':højde - 95 - 10, 'bredde':440//5, 'højde':95, 'billed_nr':2, 'hopper':False, 'v':8, 'm':2, 'y_min': højde - 95 - 10, 'hop lyd':pygame.mixer.Sound("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/hop.wav")}
 
 def jord_opdater():
 	#Ryk x1

@@ -138,18 +138,18 @@ if __name__ == '__main__':
 		 		 [None, None, None],
 		 		 [None, None, None]]
 		#dt = 1/FPS
-
 		while checkBoard(BOARD) == None: #Loop indtil enten kryds eller bolle har vundet eller det står uafgjort
+			draw(BOARD)
 			for event in pygame.event.get():
 				if event.type == QUIT:
 					terminate()
 				elif event.type == MOUSEBUTTONDOWN:
+					print("WE DOING THIS")
 					#Vi checker om der hvor musen har klikket er et sted der ikke allerede er en brik
 					validIn = validClick(pygame.mouse.get_pos(), BOARD)
 					if validIn[0]:
 						BOARD[validIn[1]][validIn[2]] = TURN
 						TURN = not TURN
 
-			draw(BOARD)
 			#dt = FPSClock.tick(FPS)
 		winScreen(checkBoard(BOARD))

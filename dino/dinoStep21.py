@@ -12,7 +12,7 @@ bredde = 800
 skærm = pygame.display.set_mode((bredde, højde))
 
 #Spil variablen indeholder alle de værdier der er knyttet til spillets kørsel
-spil = {'kør':True, 'score':0, 'high score':0, 'fart':1, 'high score fil': 'highscore.txt', 'fil nøgle' : 'highscorekey.txt'}
+spil = {'kør':True, 'score':0, 'high score':0, 'fart':1, 'high score fil': 'highscore.txt', 'fil nøgle' : '/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/highscorekey.txt'}
 
 #Åben high score nøgle filen og læs tallet derfra
 with open(spil['fil nøgle'], 'r+') as filnøgle:

@@ -14,21 +14,21 @@ skærm = pygame.display.set_mode((bredde, højde))
 spil = {'kør':True, 'score':0, 'high score':0, 'fart':1}
 
 #Jord billedet og jord variablen der indeholder værdierne knyttet til jorden
-jord_billede = pygame.image.load("ground.png")
+jord_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/ground.png")
 jord = {'x1':0, 'x2':1203 - 0, 'y':højde-19, 'bredde':1203}
 
 #Dino billedet og dino variablen der indeholder værdierne knyttet til dinoen og det samme men for når den dukker sig
-dino_billede = pygame.image.load("dinoer.png")
-dino_duk_billede = pygame.image.load("dinoduk.png")
-dino = {'x':120, 'y':højde - 95 - 10, 'bredde':440//5, 'højde':95, 'billed_nr':2, 'hopper':False, 'v':8, 'm':2, 'y_min': højde - 95 - 10, 'hop lyd':pygame.mixer.Sound("hop.wav"), 'levende':True, 'dukker':False}
+dino_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/dinoer.png")
+dino_duk_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/dinoduk.png")
+dino = {'x':120, 'y':højde - 95 - 10, 'bredde':440//5, 'højde':95, 'billed_nr':2, 'hopper':False, 'v':8, 'm':2, 'y_min': højde - 95 - 10, 'hop lyd':pygame.mixer.Sound("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/hop.wav"), 'levende':True, 'dukker':False}
 dino_duk = {'x':120, 'y':højde-61-10, 'bredde':236/2, 'højde':61, 'billed_nr':0}
 
 #Kaktus billedet og kaktus variablen der indeholder værdierne knyttet til kaktussen
-kaktus_billede = pygame.image.load("kaktus.png")
+kaktus_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/kaktus.png")
 kaktus = {'x':bredde, 'y':højde-70-10, 'bredde':34, 'højde':70, 'billed_nr':random.randint(0, 5), 'hoppet over':False}
 
 #Fugle billedet og fugle variablen der indeholder værdierne knyttet til fuglen
-fugl_billede = pygame.image.load("fugl.png")
+fugl_billede = pygame.image.load("/Users/simon/Documents/GitHub/Coding-Pirates-Python-projekter/dino/fugl.png")
 fugl = {'x':bredde, 'y':højde-81-10-61*random.randint(0,1), 'bredde':94, 'højde':81, 'billed_nr':0, 'hoppet over':False}
 
 spil['fjende'] = [kaktus, fugl][random.randint(0,1)]

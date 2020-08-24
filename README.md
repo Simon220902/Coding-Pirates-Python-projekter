@@ -12,13 +12,17 @@ I pacman mappen er alt hvad der skal bruges til at lave spillet pacman. Der er e
 I mulige fremtidige projekter mappen er der hovedsageligt kode til mulige fremtidige projekter (sjovt nok).
 
 Flappy bird:
-  Men ja flappy bird mappen er relativt gennemført, hvor der både er en version uden den rigtige grafik og en med, hvor billederne også er med.
+  
+> Men ja flappy bird mappen er relativt gennemført, hvor der både er en version uden den rigtige grafik og en med, hvor billederne også er med.
 
 2048:
-  2048 er en version af 2048 spillet (med de rigtige farver!!!), hvor det kun er koden og så var min implementering af bevægelsen lidt forkert, hvor jeg så har tyvstjålet en virkende version.
+  
+> 2048 er en version af 2048 spillet (med de rigtige farver!!!), hvor det kun er koden og så var min implementering af bevægelsen lidt forkert, hvor jeg så har tyvstjålet en virkende version.
 
 Breakout:
-  Er ja atari breakout, hvilket jeg lavede en dag til noget skole noget så ikke mit pæneste arbejde, men ja med lidt afstøvning og rengøring ville den fint kunne du.
+  
+> Er ja atari breakout, hvilket jeg lavede en dag til noget skole noget så ikke mit pæneste arbejde, men ja med lidt afstøvning og rengøring ville den fint kunne du.
 
 Living labyrinth:
-  Living labyrinth mappen indeholder min efterligning af dette spil (https://bwdev.itch.io/living-labyrinth), men uden den flotte grafik. Der er dog en mapmaker, hvor man kan lave sine egne baner ret nemt. Der er også et par billeder af hans 6 baner, hvor man jo bare kan stjæle layoutet såvel som hans grafik ved lidt snippintool magi!
+  
+> Living labyrinth mappen indeholder min efterligning af dette spil (https://bwdev.itch.io/living-labyrinth), men uden den flotte grafik. Der er dog en mapmaker, hvor man kan lave sine egne baner ret nemt. Der er også et par billeder af hans 6 baner, hvor man jo bare kan stjæle layoutet såvel som hans grafik ved lidt snippintool magi!

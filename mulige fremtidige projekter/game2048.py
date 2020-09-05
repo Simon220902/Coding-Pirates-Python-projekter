@@ -8,7 +8,7 @@ skærm = pygame.display.set_mode((bredde, højde))
 pygame.font.init()
 font = pygame.font.SysFont(None, 30)
 #Farver: R    G    B
-sort = (  0,   0,  0)+
+sort = (  0,   0,  0)
 hvid = (255, 255, 255)
 
 blokBredde = bredde//4

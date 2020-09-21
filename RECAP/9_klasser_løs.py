@@ -21,3 +21,6 @@ molly.fortælOmDigSelv()
 
 for i in range(5):
 	molly.gø()
+
+leonardsHund = Hund("Tinka", "dansk-svensk gårdhund", 3.5, 8, "sort hvid")
+leonardsHund.fortælOmDigSelv()

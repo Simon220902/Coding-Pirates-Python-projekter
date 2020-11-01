@@ -24,13 +24,13 @@ def roterVenstre(bræt):
 	#Det nye bræt
 	nytBræt = []
 	for i in range(4):
-		midBræt = []
+		kolTilRække = []
 		for j in range(4):
 			#Vi tager den kolonne yderst til højre og sætter som første række
 			#og så den næst yderste kolonne til højre og sætter den som anden osv.
-			midBræt.append(bræt[j][3-i])
+			kolTilRække.append(bræt[j][3-i])
 		#Vi tilføjer rækken der før var en kolonne til brættet
-		nytBræt.append(midBræt)
+		nytBræt.append(kolTilRække)
 	return nytBræt
 
 def roterHøjre(bræt):

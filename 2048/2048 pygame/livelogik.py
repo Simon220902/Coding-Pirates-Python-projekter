@@ -1,17 +1,45 @@
-bræt = [[0,0,2,2],
-		[4,0,4,2],
+import random
+
+bræt = [[0,0,8,8],
+		[8,0,0,8],
 		[16,0,0,16],
-		[0,8,8,0]]
+		[0,0,0,0]]
+#Roteret til venstre
+def roterVenstre(bræt):
+	nytBræt = []
+	for i in range(4):
+		nyRække = []
+		for j in range(4):
+			nyRække.append(bræt[j][3-i])
+		nytBræt.append(nyRække)
+	return nytBræt
+	
 
 
 def bevægOp(bræt):
-	pass
+	bræt = roterVenstre(bræt)
+	bræt = bevægTilVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	return bræt
 
 def bevægNed(bræt):
-	pass
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = bevægTilVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	return bræt
+
 
 def bevægTilHøjre(bræt):
-	pass
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = bevægTilVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	bræt = roterVenstre(bræt)
+	return bræt
 
 def bevægTilVenstre(bræt):
 	bræt = rykTilVenstre(bræt)
@@ -40,11 +68,30 @@ def rykTilVenstre(bræt):
 			række.append(0)
 	return bræt
 
+
+# på en tom plads (så altså der hvor der er nuller)
+# tilføj enten en 2'er eller en 4'er
+def tilføjTilfældig(bræt):
+	indexer = []
+	for rækkeI in range(4):
+		for kolI in range(4):
+			if bræt[rækkeI][kolI] == 0:
+				#  0       1
+				#(rækkeI, kolI)
+				indexer.append((rækkeI, kolI))
+	
+	# tilføj enten en 2'er eller en 4'er på en tilfældig tom plads
+	index = random.choice(indexer) #tilfældig tom pladsz
+	bræt[index[0]][index[1]] = random.choice([2, 4])
+	return bræt
+
+
+
 print("BRÆT FØR")
 for række in bræt:
 	print(række)
 
 print("BRÆT EFTER")
-bræt = bevægTilVenstre(bræt)
+bræt = tilføjTilfældig(bræt)
 for række in bræt:
 	print(række)

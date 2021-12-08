@@ -47,7 +47,6 @@ def bevægNed(bræt):
 	bræt = roterHøjre(bræt)
 	return bræt
 
-
 #RYK
 def rykTilVenstre(bræt):
 	for i in range(4):
